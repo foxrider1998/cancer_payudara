@@ -7,11 +7,11 @@ import time
 
 
 #importar arquivos
-df = pd.read_csv('../dados/dataset_tratado.csv', sep=',')
+df = pd.read_csv('./dataset_tratado.csv', sep=',')
 df_class2 = df[df['Class'] == 2]
 df_class4 = df[df['Class'] == 4]
 
-modelo = joblib.load('../webapp/modelo.joblib')
+modelo = joblib.load('../modelo.joblib')
 
 
 #configuração padrão da página
